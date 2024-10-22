@@ -84,22 +84,29 @@ namespace Scaleform
 		auto hudMenu = HUDHandler::GetTrueHUDMenu();
 		auto playerHandle = RE::PlayerCharacter::GetSingleton()->GetHandle();
 
+		/**
+		 * TODO 
+		 * 1. try to add more args add add more actor values
+		 */
 		RE::GFxValue args[20];
 		args[0].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kHealth, ColorType::BarColor));
 		args[1].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kHealth, ColorType::PhantomColor));
 		args[2].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kHealth, ColorType::BackgroundColor));
 		args[3].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kHealth, ColorType::PenaltyColor));
 		args[4].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kHealth, ColorType::FlashColor));
+
 		args[5].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kMagicka, ColorType::BarColor));
 		args[6].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kMagicka, ColorType::PhantomColor));
 		args[7].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kMagicka, ColorType::BackgroundColor));
 		args[8].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kMagicka, ColorType::PenaltyColor));
 		args[9].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kMagicka, ColorType::FlashColor));
+
 		args[10].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kStamina, ColorType::BarColor));
 		args[11].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kStamina, ColorType::PhantomColor));
 		args[12].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kStamina, ColorType::BackgroundColor));
 		args[13].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kStamina, ColorType::PenaltyColor));
 		args[14].SetNumber(hudMenu->GetBarColor(playerHandle, RE::ActorValue::kStamina, ColorType::FlashColor));
+
 		args[15].SetNumber(hudMenu->GetSpecialBarColor(playerHandle, ColorType::BarColor));
 		args[16].SetNumber(hudMenu->GetSpecialBarColor(playerHandle, ColorType::PhantomColor));
 		args[17].SetNumber(hudMenu->GetSpecialBarColor(playerHandle, ColorType::BackgroundColor));

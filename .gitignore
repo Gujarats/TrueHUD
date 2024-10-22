@@ -423,3 +423,6 @@ FodyWeavers.xsd
 
 /build
 *.swf
+
+# VS Code editor
+.vscode/

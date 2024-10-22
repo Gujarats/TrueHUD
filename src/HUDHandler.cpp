@@ -4,6 +4,10 @@
 #include "Settings.h"
 #include "Utils.h"
 
+/**
+ * register new HUD to Event ,,
+ * why ??
+ */
 void HUDHandler::Register()
 {
 	auto scriptEventSourceHolder = RE::ScriptEventSourceHolder::GetSingleton();
